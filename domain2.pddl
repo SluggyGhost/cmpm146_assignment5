@@ -27,7 +27,7 @@
 					 (in ?what ?at))
   :effect (and (not (free-hand ?hand))
                (not (in ?what ?at))
-			   (holds ?who ?what)))
+			   (holds ?hand ?what)))
 			   
 (:action drop
   :parameters (?who - character ?hand - hand ?at - room ?what - holdable)
@@ -35,7 +35,7 @@
                      (at ?who ?at))
   :effect (and (free-hand ?hand)
                (in ?what ?at)
-			   (not (holds ?who ?what))))
+			   (not (holds ?hand ?what))))
 
 (:action unlock
   :parameters (?who - character ?hand - hand ?from - room ?to - room ?key - key)
