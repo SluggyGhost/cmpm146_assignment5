@@ -37,7 +37,6 @@
 (in whiteboard r6)
 ; character settings
 (at c1 r1)
-(= (carry-count c1) 0)
 (free-hand left-hand)
 (free-hand right-hand)
 )
